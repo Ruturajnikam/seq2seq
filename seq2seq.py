@@ -1,39 +1,32 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[2]:
-
-
-import pandas as pd 
-
-
-# In[3]:
-
-
+import pandas as pd
 x = pd.read_json('M:\dsdm\spider\dev.json')
-
-
-# In[4]:
-
-
 x
 
-
-# In[15]:
-
+x.info()
+x.shape
 
 x = x.iloc[:1000]
 x
 
+y = pd.read_json(r'M:\dsdm\spider\train_others.json')
 
-# In[24]:
+y
 
+y.info()
+y.shape
 
-y = pd.read_json('M:\dsdm\spider\train_spider.json')
+y = y.iloc[:1000]
+y
 
+z = pd.read_json(r'M:\dsdm\spider\train_spider.json')
+z
 
-# In[ ]:
+z.info()
+z.shape
 
-
-
+z = z.iloc[:1000]
+z
 
